@@ -1,14 +1,22 @@
 package com.codingdojo.tries;
 
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Trie {
 	
 public final Node root;
+
+
    
 
     public Trie() {
         this.root = new Node();
+
     }
+    
+    
+    
     
     
     
@@ -88,28 +96,28 @@ public final Node root;
     
     
     
+
+    
+    
+    
+
+	
+	
     
     // void printAllKeys(): This method prints all the characters in your trie.
     public void printAllKeys() {
     	
-    	
-    	// ?alpha variable? use a lower case alphabet as validation source to check each node (like the prefix method)
-    	
-    	
-    	// gets the root node;
-        Node currentNode = this.root;
+    	Node currentNode = this.root;
         
-        
-        // iterate over trie nodes (reference the alpha variable)
-        
-        
-    	//
-        for(Map.Entry<Character, Node> entry : currentNode.children.entrySet()) {
-        	System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+        for (Character ch : currentNode.children.keySet()) {
+        	System.out.println("key: " + ch); 
+        	System.out.println(this.root.children.get(ch).children.keySet());
+        	//currentNode = next;
         }
-        
-    	
     }
+    
+    
+
     
      
 

@@ -1,5 +1,6 @@
 package com.codingdojo.tries;
 
+
 import java.util.Set;
 public class TrieTest {
 
@@ -39,12 +40,19 @@ public class TrieTest {
         
         
         System.out.println("--------------is word valid method----------------");
-        trie.isWordValid("car");
+        trie.isWordValid("card");
         
         
         System.out.println("--------------print all keys method----------------");
         trie.printAllKeys();
-                
+            
+        
+        System.out.println("--------------print all keys method----------------");
+        //trie.printAllKeys1();
+        
+        
+        System.out.println("--------------print all keys method----------------");
+        //trie.printAllKeys2();
         
 	}
 
